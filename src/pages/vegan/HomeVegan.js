@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
-import './HomeFood.css';
+import './HomeVegan.css';
 import axios from 'axios';
 import FoodNutrients from './FoodNutrients';
-import {ReactComponent as LoadingIcon} from '../assets/loading.svg'
+import {ReactComponent as LoadingIcon} from '../../assets/loading.svg'
 
-function HomeFood() {
+function HomeVegan() {
     const [food, setFood] = useState(null);
     const [calories, setCalories] = useState('');
     const [disabled, setDisabled] = useState(false);
@@ -68,4 +68,4 @@ function HomeFood() {
     );
 }
 
-export default HomeFood;
+export default HomeVegan;
