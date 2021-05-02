@@ -1,4 +1,4 @@
-article {
+.article-food {
     padding: 30px;
     margin: 15px 15px;
     border-radius: 6px;
@@ -7,35 +7,35 @@ article {
     box-shadow: 0 5px 15px 5px rgba(100, 100, 100, 0.5);
 }
 
-img {
+.img-food {
     width: 100%;
     margin-bottom: 15px;
 }
 
-.directions {
+.directions-food {
     font-size: 12px;
 }
 
-.title {
+.title-food {
     text-align: center;
     margin-bottom: 15px;
 }
 
-a:link {
+a:link.link-food {
     color: hsl(204, 100%, 62%);
     font-size: 12px;
 }
 
-a:hover {
+a:hover.link-food {
     cursor: pointer;
     color: black;
 }
 
-a:visited {
+a:visited.link-food {
     color: black;
 }
 
-.error {
+.error-food {
     text-align: center;
     margin-bottom: 15px;
     font-size: 12px;

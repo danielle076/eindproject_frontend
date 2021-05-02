@@ -1,4 +1,4 @@
-article {
+.article-vegan {
     padding: 30px;
     margin: 15px 15px;
     border-radius: 6px;
@@ -7,31 +7,31 @@ article {
     box-shadow: 0 5px 15px 5px rgba(100, 100, 100, 0.5);
 }
 
-img {
+.img-vegan {
     width: 100%;
     margin-bottom: 15px;
 }
 
-.directions {
+.directions-vegan {
     font-size: 12px;
 }
 
-.title {
+.title-vegan {
     text-align: center;
     margin-bottom: 15px;
 }
 
-a:link {
-    color: hsl(204, 100%, 62%);
+a:link.link-vegan {
+    color: hsl(120, 100%, 62%);
     font-size: 12px;
 }
 
-a:hover {
+a:hover.link-vegan {
     cursor: pointer;
     color: black;
 }
 
-a:visited {
+a:visited.link-vegan {
     color: black;
 }
 

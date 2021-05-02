@@ -57,6 +57,7 @@ function HomeFood() {
                             setDisabled(true);
                         }}
                         disabled={disabled}
+                        className='button-food'
                     >
                         Click for you daily meals
                     </button>

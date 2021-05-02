@@ -18,7 +18,7 @@ function App() {
             <nav>
                 <ul>
                     <li>
-                        <NavLink to="/" activeClassName="active-link">Home</NavLink>
+                        <NavLink to="/">Home</NavLink>
                     </li>
                     <li>
                         <NavLink to="/food" activeClassName="active-link">Food</NavLink>

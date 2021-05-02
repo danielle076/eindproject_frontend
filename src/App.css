@@ -9,6 +9,11 @@
         flex-direction: column;
         align-items: center;
     }
+
+    .home-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 nav ul {
@@ -25,11 +30,11 @@ nav ul li {
 
 nav ul li a {
     display: block;
-    color: white;
+    color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 15px 15px;
     text-decoration: none;
-    font-size: 35px;
+    font-size: 15px;
 }
 
 nav ul li a:hover {
@@ -38,4 +43,8 @@ nav ul li a:hover {
 
 .right {
     float: right;
+}
+
+.active-link {
+    background-color: white;
 }

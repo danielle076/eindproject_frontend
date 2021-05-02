@@ -24,15 +24,15 @@ function Food({meal}) {
     }, [meal.id]);
 
     return (
-        <article>
-            {error && <p className='error'>{error}</p>}
-            <h1 className='title'>{meal.title}</h1>
-            <img src={image} alt='food'/>
-            <ul className='directions'>
+        <article className='article-vegetarian'>
+            {error && <p className='error-vegetarian'>{error}</p>}
+            <h1 className='title-vegetarian'>{meal.title}</h1>
+            <img className='img-vegetarian' src={image} alt='food'/>
+            <ul className='directions-vegetarian'>
                 <li>Ready in {meal.readyInMinutes} minutes</li>
                 <li>Number of servings: {meal.servings}</li>
             </ul>
-            <a href={meal.sourceUrl} target='_blank' rel='noreferrer'>Go to the recipe</a>
+            <a href={meal.sourceUrl} target='_blank' rel='noreferrer' className='link-vegetarian'>Go to the recipe</a>
         </article>
     );
 }

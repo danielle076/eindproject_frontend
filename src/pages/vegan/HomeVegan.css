@@ -20,9 +20,9 @@ input {
     font-family: 'Open Sans', sans-serif, 'Roboto', sans-serif;
 }
 
-button {
+.button-vegan {
     padding: 8px 15px;
-    background-color: hsl(204, 100%, 62%);
+    background-color: hsl(120, 100%, 45%);
     color: white;
     border: none;
     border-radius: 6px;

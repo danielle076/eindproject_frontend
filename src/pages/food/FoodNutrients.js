@@ -6,14 +6,14 @@ function FoodNutrients({mealsData}) {
     const nutrients = mealsData.nutrients;
 
     return (
-        <main>
-            <section className='meals'>
+        <main className='main-food'>
+            <section className='meals-food'>
                 {mealsData.meals.map((meal) => {
                     return <Food key={meal.id} meal={meal}/>
                 })}
             </section>
 
-            <section className='nutrients'>
+            <section className='nutrients-food'>
                 <h1 className='h1-nutrients'>The four main nutrients in these dishes</h1>
                 <ul>
                     <li className='tooltip'>Calories: {nutrients.calories.toFixed(0)}
