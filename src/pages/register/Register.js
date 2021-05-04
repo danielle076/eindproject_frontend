@@ -1,17 +1,25 @@
 import React from 'react';
 import './Register.css';
-import {Link} from "react-router-dom";
+import app from '../../modules/firebase'
 
 function Register() {
+    const onSubmit = async event => {
+        event.preventDefault();
+        const [email, password] = event.target;
+        const user = await app.auth().createUserWithEmailAndPassword(email.value, password.value);
+        console.log(user);
+    }
+
     return (
-        <section>
-            <h1>Dit is een registreer pagina</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, eligendi nihil nostrum
-                omnis quia recusandae tenetur? Ad alias, architecto dolor eius, iure maxime minima
-                necessitatibus quae quia ratione saepe tenetur.</p>
-            <Link to="/">Ga terug naar de homepagina</Link>
-        </section>
+        <main>
+            <form onSubmit={onSubmit} id='loginform'>
+                <h1>Register</h1>
+                <input type='email' placeholder="email"/>
+                <input type='password' placeholder="password"/>
+                <input type='submit' value='register'/>
+            </form>
+        </main>
     );
 }
 
-export default Register;
+export default Register
