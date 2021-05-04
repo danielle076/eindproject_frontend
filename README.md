@@ -16,8 +16,9 @@ Deze app zorgt, nadat je de calorieën hebt ingevult, met één druk op de knop 
 Als je het project gecloned hebt naar jouw lokale machine, installeer je eerst de node_modules door het volgende commando's in de terminal te runnen:
 
 - `npm install`
-
 - `npm install axios`
+- `npm install react-router-dom`
+- `npm install firebase`
 
 Wanneer dit klaar is, kun je de applicatie starten met behulp van:
 

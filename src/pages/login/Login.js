@@ -1,16 +1,32 @@
-import React from 'react';
+import React from 'react'
 import './Login.css';
-import {Link} from "react-router-dom";
+import app from '../../modules/firebase'
+import {Link, useHistory} from 'react-router-dom';
 
 function Login() {
+    const history = useHistory();
+
+    const onSubmit = async event => {
+        event.preventDefault();
+        const [email, password] = event.target;
+        const user = await app.auth().signInWithEmailAndPassword(email.value, password.value);
+        console.log(user);
+
+        setTimeout(() => {
+            history.push('/food');
+        }, 2000);
+    }
+
     return (
-        <section>
-            <h1>Dit is een inlog pagina</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, eligendi nihil nostrum
-                omnis quia recusandae tenetur? Ad alias, architecto dolor eius, iure maxime minima
-                necessitatibus quae quia ratione saepe tenetur.</p>
-            <Link to="/">Ga terug naar de homepagina</Link>
-        </section>
+        <main>
+            <form onSubmit={onSubmit} id='loginform'>
+                <h1>Login</h1>
+                <input type='email' placeholder="email"/>
+                <input type='password' placeholder="password"/>
+                <input type='submit' value='login'/>
+            </form>
+            <p>Heb je nog geen account? <Link to="/register">Registreer</Link> je dan eerst.</p>
+        </main>
     );
 }
 

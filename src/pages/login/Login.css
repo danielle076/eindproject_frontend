@@ -1,0 +1,24 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    font-family: 'Open Sans', sans-serif, 'Roboto', sans-serif;
+}
+
+#loginform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#loginform input {
+    margin: 1px;
+}
