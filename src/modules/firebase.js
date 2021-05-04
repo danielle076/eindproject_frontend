@@ -1,12 +1,18 @@
 import firebase from 'firebase';
 
 const app = firebase.initializeApp({
-    apiKey: "",
-    authDomain: "summer-body-novi.firebaseapp.com",
-    projectId: "summer-body-novi",
-    storageBucket: "summer-body-novi.appspot.com",
-    messagingSenderId: "278360516439",
-    appId: "1:278360516439:web:4cfc5e7dbef70957780012"
+    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+    authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_FIREBASE_APP_ID
 });
 
 export default app;
+
+
+
+
+
+

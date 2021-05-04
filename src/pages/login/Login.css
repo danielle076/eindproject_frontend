@@ -1,24 +1,46 @@
-main {
+.form-login {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    text-align: center;
-    padding: 8px;
-    border-radius: 6px;
-    border: none;
-    vertical-align: middle;
-    margin: 5px 10px 5px 0;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
     font-family: 'Open Sans', sans-serif, 'Roboto', sans-serif;
+    border-radius: 6px;
+    max-width: 290px;
+    background-color: white;
+    box-shadow: 0 5px 15px 5px rgba(100, 100, 100, 0.5);
 }
 
-#loginform {
+.login {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#loginform input {
-    margin: 1px;
+.h1-login {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+.p-login {
+    font-size: 13px;
+    color: black;
+    margin-top: 15px;
+}
+
+a:link.link-login {
+    color: hsl(218, 100%, 62%);
+    font-size: 12px;
+}
+
+a:hover.link-login {
+    cursor: pointer;
+    color: black;
+}
+
+a:visited.link-login {
+    color: black;
 }

@@ -11,6 +11,7 @@ import HomeVegetarian from "./pages/vegetarian/HomeVegetarian";
 import HomeVegan from "./pages/vegan/HomeVegan";
 import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
+import Secret from "./pages/secret/Secret";
 
 function App() {
     return (
@@ -56,6 +57,9 @@ function App() {
                 </Route>
                 <Route path="/register">
                     <Register/>
+                </Route>
+                <Route path="/secret">
+                    <Secret/>
                 </Route>
             </Switch>
         </>
