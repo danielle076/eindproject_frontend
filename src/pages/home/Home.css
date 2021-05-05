@@ -1,18 +1,19 @@
 .home-container {
-    /*flex-direction: row;*/
-    /*align-items: center;*/
+    /*flex-wrap: wrap;*/
     display: flex;
     justify-content: center;
+    align-content: center;
 }
 
 .article-home {
+    margin: 15px 15px 0 15px;
     padding: 30px;
-    margin: 15px 15px;
     border-radius: 6px;
     max-width: 1000px;
     max-height: 400px;
     background-color: white;
     box-shadow: 0 5px 15px 5px rgba(100, 100, 100, 0.5);
+    align-content: center;
 }
 
 .img-home {

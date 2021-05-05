@@ -21,7 +21,7 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: hsl(192, 8%, 88%);
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 nav ul li {
@@ -38,7 +38,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: white;
+    background-color: hsl(70, 62%, 50%);
 }
 
 .right {

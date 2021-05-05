@@ -5,41 +5,35 @@ import quote from '../../assets/quote.jpg';
 function Home() {
 
     return (
-        <main-home>
+        <main>
             <div className="home-container">
                 <article className="article-home">
                     <h2 className="product-name">Looking for a summer body?</h2>
                     <p className="p-home">
-                        Er is niets lekkerder dan die eerste dag warm weer. Eerst ben je
-                        blij dat je eindelijk je wintertruien van je af kunt gooien, maar dan dringt het tot je door -
-                        het
-                        bikiniseizoen komt er zo aan en jij zit nog steeds in de vetmasserende winterslaapstand.
+                        There's nothing like that first day of warm weather. At first you are happy that you can finally
+                        throw off your winter sweaters, but then it hits you - the bikini season is just around the
+                        corner and you're still in fat-massaging winter hibernation mode.
                     </p>
                     <p className="p-home">
-                        Geen paniek. Niet alleen is er nog genoeg tijd om je voor te bereiden, maar om jezelf beach-body
-                        ready te maken is alleen een beetje zweet en de juiste voeding nodig.
+                        Don't panic. Not only is there still plenty of time to prepare, but to get yourself beach-body
+                        ready, all it takes is a little sweat and the right nutrition.
                     </p>
                     <p className="p-home">
-                        Heb je nog niet het gevoel dat je klaar bent voor het strandlichaam? Geen probleem wij zijn hier
-                        om
-                        je te redden qua voeding. Of je nu vegan, vegetarian of een alles eter bent, we are here to save
-                        your day. Het enige wat
-                        jij moet doen is kiezen uit food, vegetarian of vegan, je vult de calorieën in en voilá, een
-                        ochtend, middag en avondmaal op je beeldscherm.
+                        Don't feel like you're ready for the beach body yet? No problem we are here to save you
+                        nutritionally. Whether you are vegan, vegetarian or an all-eater, we are here to save your day.
+                        All you have to do is choose food, vegetarian or vegan, fill in the calories and voilá, a
+                        morning, afternoon and evening meal on your screen.
                     </p>
                     <p className="p-home">
-                        Het enige wat je nu nog moet doen is op de link van de maaltijd klikken om te zien welke
-                        ingrediënten je nodig hebt en hoe je hem bereid. Je hoeft zelf dus niet meer na te denken en
-                        moeilijk te doen
-                        over wat je wilt en kan eten, lekker relaxt!
+                        All you have to do is click on the link of the meal to see what ingredients you need and how to
+                        prepare it. So you don't have to think about what you want and can eat, nice and relaxed!
                     </p>
                 </article>
-
                 <article className="article-home">
                     <img className="img-home" src={quote} alt={quote}/>
                 </article>
             </div>
-        </main-home>
+        </main>
     );
 }
 

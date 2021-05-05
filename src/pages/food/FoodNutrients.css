@@ -10,6 +10,14 @@
     margin-bottom: 15px;
 }
 
+.nutrients-food {
+    padding: 20px;
+    margin: 15px 15px;
+    border-radius: 6px;
+    background-color: white;
+    box-shadow: 0 5px 15px 5px rgba(100, 100, 100, 0.5);
+}
+
 .nutrients-food ul {
     display: flex;
     width: 560px;
@@ -26,15 +34,15 @@ ul {
     display: flex;
 }
 
-.tooltip {
+.tooltip-food {
     position: relative;
     display: inline-block;
 }
 
-.tooltip .tooltiptext {
+.tooltip-food .tooltiptext {
     visibility: hidden;
     width: 150px;
-    background-color: white;
+    background-color: hsl(204, 100%, 62%);
     color: #000;
     font-size: 12px;
     text-shadow: none;
@@ -48,6 +56,6 @@ ul {
     border-radius: 6px;
 }
 
-.tooltip:hover .tooltiptext {
+.tooltip-food:hover .tooltiptext {
     visibility: visible;
 }
