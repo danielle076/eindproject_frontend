@@ -5,25 +5,27 @@ import app from '../../modules/firebase';
 
 function Login() {
     const history = useHistory();
-    const [error, setError] = useState("");
-    const [loading, toggleLoading] = useState("");
+    const [error, setError] = useState('');
+    const [loading, toggleLoading] = useState('');
     const [loginSuccess, toggleLoginSuccess] = useState(false);
 
     const onSubmit = async event => {
-        setError("");
-        toggleLoading("true")
+        setError('');
+        toggleLoading('true')
 
         try {
             event.preventDefault();
             const [email, password] = event.target;
             const user = await app.auth().signInWithEmailAndPassword(email.value, password.value);
-            console.log(user);
+
             toggleLoginSuccess(true);
+
             setTimeout(() => {
                 history.push('/secret');
             }, 2000);
-        } catch(error){
-            setError("Er is iets misgegaan bij het ophalen van de data.")
+
+        } catch (error) {
+            setError('Er is iets misgegaan bij het ophalen van de data.')
             console.error(error)
         }
         toggleLoading(false);
@@ -34,12 +36,15 @@ function Login() {
             <form onSubmit={onSubmit} className='login'>
                 {error && <p>{error}</p>}
                 {loading && <p>Data wordt geladen...</p>}
-                <h1 className="h1-login">Sign In</h1>
-                <input type='email' placeholder="email"/>
-                <input type='password' placeholder="password"/>
-                <input type='submit' value='login'/>
-                {loginSuccess === true && <p className="p-login">Inloggen is gelukt! Je gaat nu naar de geheime pagina.</p>}
-                <p className="p-login">Don't have an account yet? Then <Link to="/register" className="link-login">register</Link> first.</p>
+
+                <h1 className='h1-login'>My Account</h1>
+                <input type='email' placeholder='email'/>
+                <input type='password' placeholder='password'/>
+                <input type='submit' className='button-login' value='login'/>
+
+                {loginSuccess === true && <p className='p-login'>Inloggen is gelukt! Je gaat nu naar de geheime pagina.</p>}
+
+                <p className='p-login'>Don't have an account yet? Then <Link to='/register' className='link-login'>register</Link> first.</p>
             </form>
         </main>
     );

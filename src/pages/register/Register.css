@@ -1,8 +1,5 @@
 .form-register {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
+    margin-top: 15px;
     margin-left: auto;
     margin-right: auto;
     padding: 30px;
@@ -29,16 +26,41 @@
     font-size: 13px;
     color: black;
     margin-top: 15px;
+    text-align: center;
+}
+
+input {
+    text-align: center;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    font-family: 'Open Sans', sans-serif, 'Roboto', sans-serif;
+}
+
+.button-register {
+    padding: 8px 15px;
+    background-color: hsl(70, 62%, 50%);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Open Sans', sans-serif, 'Roboto', sans-serif;
+}
+
+.button-register:hover {
+    cursor: pointer;
+    border-radius: 16px;
 }
 
 a:link.link-register {
-    color: hsl(218, 100%, 62%);
+    color: black;
     font-size: 12px;
 }
 
 a:hover.link-register {
     cursor: pointer;
-    color: black;
+    color: hsl(70, 62%, 50%);
 }
 
 a:visited.link-register {

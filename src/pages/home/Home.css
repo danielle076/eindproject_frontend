@@ -1,8 +1,8 @@
 .home-container {
-    /*flex-wrap: wrap;*/
     display: flex;
     justify-content: center;
     align-content: center;
+    flex-wrap: wrap;
 }
 
 .article-home {
@@ -13,7 +13,6 @@
     max-height: 400px;
     background-color: white;
     box-shadow: 0 5px 15px 5px rgba(100, 100, 100, 0.5);
-    align-content: center;
 }
 
 .img-home {

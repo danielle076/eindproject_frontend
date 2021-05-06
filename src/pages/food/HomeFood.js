@@ -17,7 +17,6 @@ function HomeFood() {
 
         try {
             const result = await axios.get(`https://api.spoonacular.com/mealplanner/generate?apiKey=${process.env.REACT_APP_API_KEY}&timeFrame=day&targetCalories=${calories}`);
-            console.log('DATA RESULTS:', result.data);
             setFood(result.data);
         } catch (error) {
             setError('Oops... something went wrong. Please try again.');

@@ -4,14 +4,14 @@ import {
     Switch,
     Route,
     NavLink
-} from "react-router-dom";
-import Home from "./pages/home/Home";
-import HomeFood from "./pages/food/HomeFood";
-import HomeVegetarian from "./pages/vegetarian/HomeVegetarian";
-import HomeVegan from "./pages/vegan/HomeVegan";
-import Login from "./pages/login/Login";
-import Register from "./pages/register/Register";
-import Secret from "./pages/secret/Secret";
+} from 'react-router-dom';
+import Home from './pages/home/Home';
+import HomeFood from './pages/food/HomeFood';
+import HomeVegetarian from './pages/vegetarian/HomeVegetarian';
+import HomeVegan from './pages/vegan/HomeVegan';
+import Login from './pages/login/Login';
+import Register from './pages/register/Register';
+import Secret from './pages/secret/Secret';
 
 function App() {
     return (
@@ -19,46 +19,46 @@ function App() {
             <nav>
                 <ul>
                     <li>
-                        <NavLink to="/">Home</NavLink>
+                        <NavLink to='/' exact activeClassName='active-link'>Home</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/food" activeClassName="active-link">Food</NavLink>
+                        <NavLink to='/food' activeClassName='active-link'>Food</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/vegetarian" activeClassName="active-link">Vegetarian</NavLink>
+                        <NavLink to='/vegetarian' activeClassName='active-link'>Vegetarian</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/vegan" activeClassName="active-link">Vegan</NavLink>
+                        <NavLink to='/vegan' activeClassName='active-link'>Vegan</NavLink>
                     </li>
-                    <li className="right">
-                        <NavLink to="/login" activeClassName="active-link">Login</NavLink>
+                    <li className='right'>
+                        <NavLink to='/login' activeClassName='active-link'>Login</NavLink>
                     </li>
-                    <li className="right">
-                        <NavLink to="/register" activeClassName="active-link">Register</NavLink>
+                    <li className='right'>
+                        <NavLink to='/register' activeClassName='active-link'>Register</NavLink>
                     </li>
                 </ul>
             </nav>
 
             <Switch>
-                <Route exact path="/">
+                <Route exact path='/'>
                     <Home/>
                 </Route>
-                <Route path="/food">
+                <Route path='/food'>
                     <HomeFood/>
                 </Route>
-                <Route path="/vegetarian">
+                <Route path='/vegetarian'>
                     <HomeVegetarian/>
                 </Route>
-                <Route path="/vegan">
+                <Route path='/vegan'>
                     <HomeVegan/>
                 </Route>
-                <Route path="/login">
+                <Route path='/login'>
                     <Login/>
                 </Route>
-                <Route path="/register">
+                <Route path='/register'>
                     <Register/>
                 </Route>
-                <Route path="/secret">
+                <Route path='/secret'>
                     <Secret/>
                 </Route>
             </Switch>

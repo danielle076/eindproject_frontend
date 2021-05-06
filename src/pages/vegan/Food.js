@@ -12,7 +12,6 @@ function Food({meal}) {
 
             try {
                 const result = await axios.get(`https://api.spoonacular.com/recipes/${meal.id}/information?apiKey=${process.env.REACT_APP_API_KEY}&includeNutrition=false`);
-                console.log('FETCHDATA RESULTS:', result.data);
                 setImage(result.data.image);
             } catch (error) {
                 setError('Sorry, images are not loading.');

@@ -16,8 +16,7 @@ function HomeVegetarian() {
         toggleLoading('true')
 
         try {
-            const result = await axios.get(`https://api.spoonacular.com/mealplanner/generate?apiKey=${process.env.REACT_APP_API_KEY}&timeFrame=day&targetCalories=${calories}&vegetarian`);
-            console.log('DATA RESULTS:', result.data);
+            const result = await axios.get(`https://api.spoonacular.com/mealplanner/generate?apiKey=${process.env.REACT_APP_API_KEY}&timeFrame=day&targetCalories=${calories}&diet=vegetarian`);
             setFood(result.data);
         } catch (error) {
             setError('Oops... something went wrong. Please try again.');

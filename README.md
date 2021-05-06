@@ -2,7 +2,7 @@
 
 ### Inleiding
 
-Deze frontend programming eindopdracht is gemaakt naar aanleiding van de Frontend Development aan Novi Hogeschool.
+Deze frontend programming eindopdracht is gemaakt naar aanleiding van de Frontend Development opleiding aan Novi Hogeschool.
 
 Het project is opgezet met [Create React App](https://github.com/facebook/create-react-app).
 
@@ -13,7 +13,7 @@ De zomer komt eraan en we willen allemaal een mooi, gezond lichaam op het strand
 Deze app zorgt, nadat je de calorieën hebt ingevult, met één druk op de knop voor drie maaltijden met de juiste hoeveelheid calorieën. Hoe je de maaltijden moet maken staat op een externe website waar naartoe is gelinkt.
 
 ### De applicatie starten
-Als je het project gecloned hebt naar jouw lokale machine, installeer je eerst de node_modules door het volgende commando's in de terminal te runnen:
+Als je het project gvanuit github ecloned hebt naar jouw lokale machine, installeer je eerst de node_modules door het volgende commando's in de terminal te runnen:
 
 - `npm install`
 - `npm install axios`
@@ -25,3 +25,7 @@ Wanneer dit klaar is, kun je de applicatie starten met behulp van:
 `npm start`
 
 Open http://localhost:3000 om de pagina in de browser te bekijken.
+
+### Screen
+
+![screen.png](src/assets/screen.png)

@@ -8,5 +8,5 @@
 body {
     font-family: 'Open Sans', sans-serif, 'Roboto', sans-serif;
     background-color: hsl(192, 8%, 88%);
-    background-image: url("assets/header.jpeg");
+    background-image: url('assets/bg.jpeg');
 }
