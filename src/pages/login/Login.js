@@ -17,6 +17,7 @@ function Login() {
             event.preventDefault();
             const [email, password] = event.target;
             const user = await app.auth().signInWithEmailAndPassword(email.value, password.value);
+            console.log(user);
 
             toggleLoginSuccess(true);
 
@@ -40,7 +41,7 @@ function Login() {
                 <h1 className='h1-login'>My Account</h1>
                 <input type='email' placeholder='email'/>
                 <input type='password' placeholder='password'/>
-                <input type='submit' className='button-login' value='login'/>
+                <input type='submit' className='button-login' value='Login'/>
 
                 {loginSuccess === true && <p className='p-login'>Inloggen is gelukt! Je gaat nu naar de geheime pagina.</p>}
 

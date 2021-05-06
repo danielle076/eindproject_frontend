@@ -10,16 +10,46 @@
     padding: 30px;
     border-radius: 6px;
     max-width: 1000px;
-    max-height: 400px;
+    max-height: 300px;
     background-color: white;
     box-shadow: 0 5px 15px 5px rgba(100, 100, 100, 0.5);
 }
 
 .img-home {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
 }
 
 .p-home {
     margin-top: 15px;
+}
+
+.img-homefood {
+    width: 205px;
+    height: 250px;
+}
+
+.footer-container {
+    display: block;
+    margin: 30px auto 15px auto;
+    text-align: center;
+    padding: 15px;
+    border-radius: 6px;
+    max-width: 1415px;
+    max-height: 20px;
+    background-color: white;
+    box-shadow: 0 5px 15px 5px rgba(100, 100, 100, 0.5);
+}
+
+a:link.home-email {
+    color: hsl(70, 62%, 50%);
+}
+
+a:hover.home-email {
+    cursor: pointer;
+    color: black;
+}
+
+a:visited.home-email {
+    color: black;
 }

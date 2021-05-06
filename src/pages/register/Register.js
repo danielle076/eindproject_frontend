@@ -17,6 +17,7 @@ function Register() {
             event.preventDefault();
             const [email, password] = event.target;
             const user = await app.auth().createUserWithEmailAndPassword(email.value, password.value);
+            console.log(user);
 
             toggleRegisterSuccess(true);
 
