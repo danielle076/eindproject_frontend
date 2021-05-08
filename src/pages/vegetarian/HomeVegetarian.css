@@ -23,7 +23,7 @@ input {
 .button-vegetarian {
     padding: 8px 15px;
     background-color: hsl(48, 100%, 62%);
-    color: white;
+    color: black;
     border: none;
     border-radius: 6px;
     font-family: 'Open Sans', sans-serif, 'Roboto', sans-serif;

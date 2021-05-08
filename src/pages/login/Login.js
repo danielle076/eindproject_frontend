@@ -26,7 +26,7 @@ function Login() {
             }, 2000);
 
         } catch (error) {
-            setError('Er is iets misgegaan bij het ophalen van de data.')
+            setError('Something went wrong when retrieving the data.')
             console.error(error)
         }
         toggleLoading(false);
@@ -36,14 +36,14 @@ function Login() {
         <main className='form-login'>
             <form onSubmit={onSubmit} className='login'>
                 {error && <p>{error}</p>}
-                {loading && <p>Data wordt geladen...</p>}
+                {loading && <p>Data is being loaded...</p>}
 
                 <h1 className='h1-login'>My Account</h1>
-                <input type='email' placeholder='email'/>
-                <input type='password' placeholder='password'/>
+                <input type='email' className='input-login' placeholder='Email'/>
+                <input type='password' className='input-login' placeholder='Password'/>
                 <input type='submit' className='button-login' value='Login'/>
 
-                {loginSuccess === true && <p className='p-login'>Inloggen is gelukt! Je gaat nu naar de geheime pagina.</p>}
+                {loginSuccess === true && <p className='p-login'>Login succeeded! You will now go to the secret page.</p>}
 
                 <p className='p-login'>Don't have an account yet? Then <Link to='/register' className='link-login'>register</Link> first.</p>
             </form>
