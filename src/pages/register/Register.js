@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './Register.css';
+import styles from './Register.module.css';
 import {Link, useHistory} from 'react-router-dom';
 import app from '../../modules/firebase';
 
@@ -33,19 +33,19 @@ function Register() {
     }
 
     return (
-        <main className='form-register'>
-            <form onSubmit={onSubmit} className='register'>
+        <main className={styles.form}>
+            <form onSubmit={onSubmit} className={styles.register}>
                 {error && <p>{error}</p>}
                 {loading && <p>Data is being loaded...</p>}
 
-                <h1 className='h1-register'>Register for juicy stuff</h1>
-                <input type='email' className='input-register' placeholder='Email'/>
-                <input type='password' className='input-register' placeholder='Password'/>
-                <input type='submit' className='button-register' value='Register'/>
+                <h1 className={styles.h1}>Register for juicy stuff</h1>
+                <input type='email' className={styles.input} placeholder='Email'/>
+                <input type='password' className={styles.input} placeholder='Password'/>
+                <input type='submit' className={styles.button} value='Register'/>
 
-                {registerSuccess === true && <p className='p-register'>Registration has succeeded! You can log in now.</p>}
+                {registerSuccess === true && <p className={styles.p}>Registration has succeeded! You can log in now.</p>}
 
-                <p className='p-register'>Do you already have an account? Log in <Link to='/login' className='link-register'>here</Link>.</p>
+                <p className={styles.p}>Do you already have an account? Log in <Link to='/login' className={styles.link}>here</Link>.</p>
             </form>
         </main>
     );

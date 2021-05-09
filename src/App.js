@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import styles from './App.module.css';
 import {
     Switch,
     Route,
@@ -19,22 +19,22 @@ function App() {
             <nav>
                 <ul>
                     <li>
-                        <NavLink to='/' exact activeClassName='active-link'>Home</NavLink>
+                        <NavLink to='/' exact activeClassName={styles['active-link']}>Home</NavLink>
                     </li>
                     <li>
-                        <NavLink to='/food' activeClassName='active-link'>Food</NavLink>
+                        <NavLink to='/food' activeClassName={styles['active-link']}>Food</NavLink>
                     </li>
                     <li>
-                        <NavLink to='/vegetarian' activeClassName='active-link'>Vegetarian</NavLink>
+                        <NavLink to='/vegetarian' activeClassName={styles['active-link']}>Vegetarian</NavLink>
                     </li>
                     <li>
-                        <NavLink to='/vegan' activeClassName='active-link'>Vegan</NavLink>
+                        <NavLink to='/vegan' activeClassName={styles['active-link']}>Vegan</NavLink>
                     </li>
-                    <li className='right'>
-                        <NavLink to='/login' activeClassName='active-link'>Login</NavLink>
+                    <li className={styles.right}>
+                        <NavLink to='/login' activeClassName={styles['active-link']}>Login</NavLink>
                     </li>
-                    <li className='right'>
-                        <NavLink to='/register' activeClassName='active-link'>Register</NavLink>
+                    <li className={styles.right}>
+                        <NavLink to='/register' activeClassName={styles['active-link']}>Register</NavLink>
                     </li>
                 </ul>
             </nav>

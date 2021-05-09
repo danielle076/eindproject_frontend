@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './HomeVegan.css';
+import styles from './HomeVegan.module.css';
 import axios from 'axios';
 import FoodNutrients from './FoodNutrients';
 import {ReactComponent as LoadingIcon} from '../../assets/loading.svg'
@@ -41,9 +41,9 @@ function HomeVegan() {
 
     return (
         <>
-            {error && <p className='error-home'>{error}</p>}
+            {error && <p className={styles.error}>{error}</p>}
             <div>
-                <section className='food'>
+                <section className={styles.food}>
                     <input
                         type='number'
                         placeholder='Enter calories'
@@ -56,12 +56,12 @@ function HomeVegan() {
                             setDisabled(true);
                         }}
                         disabled={disabled}
-                        className='button-vegan'
+                        className={styles.button}
                     >
                         Click for you daily meals
                     </button>
                 </section>
-                {loading && <LoadingIcon className='loader'/>}
+                {loading && <LoadingIcon className={styles.loader}/>}
                 {food && <FoodNutrients mealsData={food}/>}
             </div>
         </>

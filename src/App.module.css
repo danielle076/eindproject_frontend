@@ -1,21 +1,3 @@
-@media only screen and (max-width: 1024px) {
-    .meals {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nutrients ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .home-container {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
 nav ul {
     list-style-type: none;
     margin: 0;

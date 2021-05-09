@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
-import './Food.css';
+import styles from './Food.module.css';
 
 function Food({meal}) {
     const [image, setImage] = useState('');
@@ -23,15 +23,15 @@ function Food({meal}) {
     }, [meal.id]);
 
     return (
-        <article className='article-food'>
-            {error && <p className='error-food'>{error}</p>}
-            <h1 className='title-food'>{meal.title}</h1>
-            <img className='img-food' src={image} alt='food'/>
-            <ul className='directions-food'>
+        <article className={styles.article}>
+            {error && <p className={styles.error}>{error}</p>}
+            <h1 className={styles.title}>{meal.title}</h1>
+            <img className={styles.img} src={image} alt='food'/>
+            <ul className={styles.directions}>
                 <li>Ready in {meal.readyInMinutes} minutes</li>
                 <li>Number of servings: {meal.servings}</li>
             </ul>
-            <a href={meal.sourceUrl} target='_blank' rel='noreferrer' className='link-food'>Go to the recipe</a>
+            <a href={meal.sourceUrl} target='_blank' rel='noreferrer' className={styles.link}>Go to the recipe</a>
         </article>
     );
 }

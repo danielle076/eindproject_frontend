@@ -1,11 +1,11 @@
-.home-container {
+.container {
     display: flex;
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
 }
 
-.article-home {
+.article {
     margin: 15px 15px 0 15px;
     padding: 30px;
     border-radius: 6px;
@@ -15,21 +15,21 @@
     box-shadow: 0 5px 15px 5px rgba(100, 100, 100, 0.5);
 }
 
-.img-home {
+.img {
     width: 300px;
     height: 300px;
 }
 
-.p-home {
+.p {
     margin-top: 15px;
 }
 
-.img-homefood {
+.homefood {
     width: 205px;
     height: 250px;
 }
 
-.footer-container {
+.footer {
     display: block;
     margin: 30px auto 15px auto;
     text-align: center;
@@ -41,15 +41,22 @@
     box-shadow: 0 5px 15px 5px rgba(100, 100, 100, 0.5);
 }
 
-a:link.home-email {
+a:link.email {
     color: hsl(70, 62%, 50%);
 }
 
-a:hover.home-email {
+a:hover.email {
     cursor: pointer;
     color: black;
 }
 
-a:visited.home-email {
+a:visited.email {
     color: black;
+}
+
+@media only screen and (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
 }

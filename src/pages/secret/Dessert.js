@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import './Dessert.css';
+import styles from './Dessert.module.css';
 import axios from 'axios';
 import {ReactComponent as LoadingIcon} from "../../assets/loading.svg";
 
@@ -27,14 +27,14 @@ function Dessert() {
     }, []);
 
     return (
-        <article className='article-dessert'>
-            {error && <p className='error-dessert'>{error}</p>}
+        <article className={styles.article}>
+            {error && <p className={styles.error}>{error}</p>}
 
             {food && food.map((foods) => {
                 return ([
-                    <h2 key={foods.title} className='h2-dessert'>{foods.title}</h2>,
-                    <img src={foods.image} alt='food' className='img-dessert' key={foods.id}/>,
-                    <a href={foods.sourceUrl} target='_blank' rel='noreferrer'  className='link-dessert'>Go to Recipe</a>,
+                    <h2 key={foods.title} className={styles.h2}>{foods.title}</h2>,
+                    <img src={foods.image} alt='food' className={styles.img} key={foods.id}/>,
+                    <a href={foods.sourceUrl} target='_blank' rel='noreferrer'  className={styles.link}>Go to Recipe</a>,
                 ]);
             })}
             {loading && <LoadingIcon className='loader'/>}

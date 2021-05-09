@@ -20,10 +20,10 @@ input {
     font-family: 'Open Sans', sans-serif, 'Roboto', sans-serif;
 }
 
-.button-vegan {
+.button {
     padding: 8px 15px;
-    background-color: hsl(120, 100%, 45%);
-    color: white;
+    background-color: hsl(48, 100%, 62%);
+    color: black;
     border: none;
     border-radius: 6px;
     font-family: 'Open Sans', sans-serif, 'Roboto', sans-serif;
@@ -34,7 +34,7 @@ button:hover {
     border-radius: 16px;
 }
 
-.error-home {
+.error {
     display: flex;
     align-items: center;
     flex-direction: column;

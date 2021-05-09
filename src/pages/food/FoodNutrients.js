@@ -1,32 +1,32 @@
 import React from 'react';
 import Food from './Food';
-import './FoodNutrients.css';
+import styles from './FoodNutrients.module.css';
 
 function FoodNutrients({mealsData}) {
     const nutrients = mealsData.nutrients;
 
     return (
-        <main className='main-food'>
-            <section className='meals-food'>
+        <main className={styles.main}>
+            <section className={styles.meals}>
                 {mealsData.meals.map((meal) => {
                     return <Food key={meal.id} meal={meal}/>
                 })}
             </section>
 
-            <section className='nutrients-food'>
-                <h1 className='h1-nutrients'>The four main nutrients in these dishes</h1>
+            <section className={styles.nutrients}>
+                <h1 className={styles.h1}>The four main nutrients in these dishes</h1>
                 <ul>
-                    <li className='tooltip-food'>Calories: {nutrients.calories.toFixed(0)}
-                        <span className='tooltiptext'>A calorie is a unit of energy.</span>
+                    <li className={styles.tooltip}>Calories: {nutrients.calories.toFixed(0)}
+                        <span className={styles.tooltiptext}>A calorie is a unit of energy.</span>
                     </li>
-                    <li className='tooltip-food'>Carbohydrates: {nutrients.carbohydrates.toFixed(0)}
-                        <span className='tooltiptext'>Carbohydrates are the sugars, starches and fibers found in fruits, grains, vegetables and milk products.</span>
+                    <li className={styles.tooltip}>Carbohydrates: {nutrients.carbohydrates.toFixed(0)}
+                        <span className={styles.tooltiptext}>Carbohydrates are the sugars, starches and fibers found in fruits, grains, vegetables and milk products.</span>
                     </li>
-                    <li className='tooltip-food'>Fat: {nutrients.fat.toFixed(0)}
-                        <span className='tooltiptext'>The body uses fat as a fuel source, and fat is the major storage form of energy in the body.</span>
+                    <li className={styles.tooltip}>Fat: {nutrients.fat.toFixed(0)}
+                        <span className={styles.tooltiptext}>The body uses fat as a fuel source, and fat is the major storage form of energy in the body.</span>
                     </li>
-                    <li className='tooltip-food'>Protein: {nutrients.protein.toFixed(0)}
-                        <span className='tooltiptext'>Protein is a macronutrient that is essential to building muscle mass.</span>
+                    <li className={styles.tooltip}>Protein: {nutrients.protein.toFixed(0)}
+                        <span className={styles.tooltiptext}>Protein is a macronutrient that is essential to building muscle mass.</span>
                     </li>
                 </ul>
             </section>

@@ -20,21 +20,21 @@ input {
     font-family: 'Open Sans', sans-serif, 'Roboto', sans-serif;
 }
 
-.button-vegetarian {
+.button {
     padding: 8px 15px;
-    background-color: hsl(48, 100%, 62%);
-    color: black;
+    background-color: hsl(204, 100%, 62%);
+    color: white;
     border: none;
     border-radius: 6px;
     font-family: 'Open Sans', sans-serif, 'Roboto', sans-serif;
 }
 
-button:hover {
+.button:hover {
     cursor: pointer;
     border-radius: 16px;
 }
 
-.error-home {
+.error {
     display: flex;
     align-items: center;
     flex-direction: column;
