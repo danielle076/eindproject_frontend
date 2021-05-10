@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import styles from './Login.module.css';
 import {Link, useHistory} from 'react-router-dom';
 import app from '../../modules/firebase';
+import UserInput from '../../components/input/UserInput';
 
 function Login() {
     const history = useHistory();
@@ -39,9 +40,7 @@ function Login() {
                 {loading && <p>Data is being loaded...</p>}
 
                 <h1 className={styles.h1}>My Account</h1>
-                <input type='email' className={styles.input} placeholder='Email'/>
-                <input type='password' className={styles.input}  placeholder='Password'/>
-                <input type='submit' className={styles.button} value='Login'/>
+                <UserInput/>
 
                 {loginSuccess === true && <p className={styles.p}>Login succeeded! You will now go to the secret page.</p>}
 

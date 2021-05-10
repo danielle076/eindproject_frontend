@@ -1,8 +1,8 @@
 import React from 'react';
-import Food from './Food';
-import styles from './FoodNutrients.module.css';
+import Food from '../../components/food/Food'
+import styles from './Nutrients.module.css';
 
-function FoodNutrients({mealsData}) {
+function Nutrients({mealsData}) {
     const nutrients = mealsData.nutrients;
 
     return (
@@ -34,4 +34,4 @@ function FoodNutrients({mealsData}) {
     );
 }
 
-export default FoodNutrients;
+export default Nutrients;

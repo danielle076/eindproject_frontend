@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import styles from './Dessert.module.css';
 import axios from 'axios';
-import {ReactComponent as LoadingIcon} from "../../assets/loading.svg";
+import {ReactComponent as LoadingIcon} from '../../assets/loading.svg';
 
 function Dessert() {
     const [food, setFood] = useState([]);
@@ -9,7 +9,7 @@ function Dessert() {
     const [loading, toggleLoading] = useState('');
 
     useEffect(() => {
-        async function fetchdessert() {
+        async function fetchDessert() {
             setError('');
             toggleLoading('true')
 
@@ -23,7 +23,7 @@ function Dessert() {
             toggleLoading(false);
         }
 
-        fetchdessert();
+        fetchDessert();
     }, []);
 
     return (
@@ -34,7 +34,8 @@ function Dessert() {
                 return ([
                     <h2 key={foods.title} className={styles.h2}>{foods.title}</h2>,
                     <img src={foods.image} alt='food' className={styles.img} key={foods.id}/>,
-                    <a href={foods.sourceUrl} target='_blank' rel='noreferrer'  className={styles.link}>Go to Recipe</a>,
+                    <a href={foods.sourceUrl} target='_blank' rel='noreferrer' className={styles.link}>Go to
+                        Recipe</a>,
                 ]);
             })}
             {loading && <LoadingIcon className='loader'/>}

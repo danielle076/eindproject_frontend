@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
-import styles from './HomeVegetarian.module.css';
+import styles from './Vegetarian.module.css';
 import axios from 'axios';
-import FoodNutrients from './FoodNutrients';
+import Nutrients from '../../components/nutrients/Nutrients'
 import {ReactComponent as LoadingIcon} from '../../assets/loading.svg'
 
-function HomeVegetarian() {
+function Vegetarian() {
     const [food, setFood] = useState(null);
     const [calories, setCalories] = useState('');
     const [disabled, setDisabled] = useState(false);
@@ -62,10 +62,10 @@ function HomeVegetarian() {
                     </button>
                 </section>
                 {loading && <LoadingIcon className={styles.loader}/>}
-                {food && <FoodNutrients mealsData={food}/>}
+                {food && <Nutrients mealsData={food}/>}
             </div>
         </>
     );
 }
 
-export default HomeVegetarian;
+export default Vegetarian;

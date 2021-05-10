@@ -1,0 +1,24 @@
+.footer {
+    display: block;
+    margin: 30px auto 15px auto;
+    text-align: center;
+    padding: 15px;
+    border-radius: 6px;
+    max-width: 1415px;
+    max-height: 20px;
+    background-color: white;
+    box-shadow: 0 5px 15px 5px rgba(100, 100, 100, 0.5);
+}
+
+a:link.email {
+    color: hsl(70, 62%, 50%);
+}
+
+a:hover.email {
+    cursor: pointer;
+    color: black;
+}
+
+a:visited.email {
+    color: black;
+}
