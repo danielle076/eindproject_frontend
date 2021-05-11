@@ -19,7 +19,7 @@ function Header() {
             </article>
 
             <article className={styles.article}>
-                <img className={styles.img} src={quote} alt={quote}/>
+                <img className={styles.img} src={quote} alt='donut'/>
             </article>
         </header>
     );

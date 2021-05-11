@@ -10,19 +10,19 @@ function Body(){
     return(
         <section className={styles.container}>
             <article className={styles.article}>
-                <img className={styles.img} src={home01} alt={home01}/>
+                <img className={styles.img} src={home01} alt='food'/>
             </article>
             <article className={styles.article}>
-                <img className={styles.img} src={home02} alt={home02}/>
+                <img className={styles.img} src={home02} alt='food'/>
             </article>
             <article className={styles.article}>
-                <img className={styles.img} src={home03} alt={home03}/>
+                <img className={styles.img} src={home03} alt='food'/>
             </article>
             <article className={styles.article}>
-                <img className={styles.img} src={home04} alt={home04}/>
+                <img className={styles.img} src={home04} alt='food'/>
             </article>
             <article className={styles.article}>
-                <img className={styles.img} src={home05} alt={home05}/>
+                <img className={styles.img} src={home05} alt='food'/>
             </article>
         </section>
     );
