@@ -23,8 +23,8 @@ function Header() {
                     afternoon and evening meal on your screen.
                 </p>
                 <p className={styles.p}>
-                    All you have to do is click on the link of the meal to see what ingredients you need and how to
-                    prepare it. So you don't have to think about what you want and can eat, nice and relaxed!
+                    Next all you have to do is click on the link of the meal to see what ingredients you need and how to
+                    prepare it. So you don't have to think about what you want and/or can eat: nice and relaxed!
                 </p>
             </article>
 

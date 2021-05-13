@@ -40,3 +40,16 @@ a:hover.link {
 a:visited.link {
     color: black;
 }
+
+.error {
+    font-size: 13px;
+    color: red;
+    margin-bottom: 15px;
+}
+
+.loading {
+    font-size: 15px;
+    color: black;
+    margin-bottom: 15px;
+    text-align: center;
+}

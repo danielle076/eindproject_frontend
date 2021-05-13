@@ -1,5 +1,3 @@
-import React from 'react';
-
 function Digits(num){
     return num?.toFixed(0);
 }

@@ -3,7 +3,7 @@ import {
     Switch,
     Route,
 } from 'react-router-dom';
-import Nav from "./components/nav/Nav";
+import Nav from './components/nav/Nav';
 import Home from './pages/home/Home';
 import Food from './pages/food/Food';
 import Vegetarian from './pages/vegetarian/Vegetarian';

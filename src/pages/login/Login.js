@@ -36,8 +36,8 @@ function Login() {
     return (
         <main className={styles.form}>
             <form onSubmit={onSubmit} className={styles.login}>
-                {error && <p>{error}</p>}
-                {loading && <p>Data is being loaded...</p>}
+                {error && <p className={styles.error}>{error}</p>}
+                {loading && <p className={styles.loading}>Data is being loaded...</p>}
 
                 <h1 className={styles.h1}>My Account</h1>
                 <UserInput/>
