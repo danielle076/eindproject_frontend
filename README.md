@@ -10,7 +10,7 @@
 
 ### 1. Inleiding
 
-Deze frontend programming eindopdracht is gemaakt naar aanleiding van de Frontend Development opleiding aan Novi Hogeschool.
+Deze frontend programming eindopdracht is gemaakt naar aanleiding van de Frontend Development opleiding aan NOVI Hogeschool.
 
 Het project is opgezet met [Create React App](https://github.com/facebook/create-react-app).
 
@@ -24,11 +24,11 @@ Deze app zorgt, nadat je de calorieën hebt ingevuld, met één druk op de knop 
 
 ### 3. API keys
 
-De API keys gebruikt voor dit project komen van https://spoonacular.com/food-api/ en
-https://firebase.google.com/firebase. Deze zullen in een apart bestand meegestuurd worden genaamd `.env`. Registreren kun je doen wanneer je de app hebt gestart.
+De API keys gebruikt voor dit project komen van [Spoonacular](https://spoonacular.com/food-api/) en
+[Firebase](https://firebase.google.com/firebase). Deze zullen in een apart bestand meegestuurd worden genaamd `.env`. Registreren kun je doen op de `register` pagina wanneer je de applicatie heb gestart.
 
 ### 4. De applicatie starten
-Als je het project vanuit github gecloned hebt naar jouw lokale machine, installeer je eerst de node_modules door de volgende commando's in de terminal te runnen:
+Als je het project gekopieerd hebt naar jouw lokale machine, installeer je eerst de `node_modules` door de volgende commando's in de terminal te runnen:
 
 - `npm install`
 - `npm install axios`
