@@ -34,7 +34,7 @@ function Dessert() {
                 return ([
                     <h2 key={foods.title} className={styles.h2}>{foods.title}</h2>,
                     <img src={foods.image} alt='food' className={styles.img} key={foods.id}/>,
-                    <a href={foods.sourceUrl} target='_blank' rel='noreferrer' className={styles.link}>Go to
+                    <a href={foods.sourceUrl} key={foods.sourceUrl} target='_blank' rel='noreferrer' className={styles.link}>Go to
                         Recipe</a>,
                 ]);
             })}

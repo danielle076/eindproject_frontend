@@ -25,7 +25,7 @@ Deze app zorgt, nadat je de calorieën hebt ingevuld, met één druk op de knop 
 ### 3. API keys
 
 De API keys gebruikt voor dit project komen van [Spoonacular](https://spoonacular.com/food-api/) en
-[Firebase](https://firebase.google.com/firebase). Deze zullen in een apart bestand meegestuurd worden genaamd `.env`. Registreren kun je doen op de `register` pagina wanneer je de applicatie heb gestart.
+[Firebase](https://firebase.google.com/firebase). Deze zullen in een apart bestand meegestuurd worden genaamd `.env`. Registreren kun je doen op de `register` pagina wanneer je de applicatie hebt gestart.
 
 ### 4. De applicatie starten
 Als je het project gekopieerd hebt naar jouw lokale machine, installeer je eerst de `node_modules` door de volgende commando's in de terminal te runnen:
@@ -35,11 +35,13 @@ Als je het project gekopieerd hebt naar jouw lokale machine, installeer je eerst
 - `npm install react-router-dom`
 - `npm install firebase`
 
-Wanneer dit klaar is, kun je de API keys van het `.env` bestand opslaan in de root van het project.
+Wanneer dit klaar is, kun je de API keys van het `.env` bestand opslaan in de root van het project. In de terminal run je het volgende:
+
+- `npm run build`
 
 De applicatie starten doe je met behulp van:
 
-`npm start`
+- `npm start`
 
 Open http://localhost:3000 om de pagina in de browser te bekijken.
 
