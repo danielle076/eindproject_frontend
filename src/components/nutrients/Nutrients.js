@@ -15,7 +15,7 @@ function Nutrients({mealsData}) {
             </section>
 
             <section className={styles.nutrients}>
-                <h1 className={styles.h1}>The four main nutrients in these dishes</h1>
+                <h1 className={styles.h1}>The four most important nutrients in total from these dishes</h1>
                 <ul>
                     <li className={styles.tooltip}>Calories: {Digits(nutrients?.calories)}
                         <span className={styles.tooltiptext}>A calorie is a unit of energy.</span>

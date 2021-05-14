@@ -58,7 +58,7 @@ function Vegetarian() {
                         disabled={disabled}
                         className={styles.button}
                     >
-                        Click for you daily meals
+                        Click for your daily meals
                     </button>
                 </section>
                 {loading && <LoadingIcon className={styles.loader}/>}
