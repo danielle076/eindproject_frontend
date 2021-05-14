@@ -1,52 +1,51 @@
 ## App 'summer body'
 
-### Inhoudsopgave
+### Table of Contents
 
-1. Inleiding
-2. Probleem
+1. Introduction
+2. Problem
 3. API keys
-4. De applicatie starten
+4. Starting the application
 5. Unit test
 
-### 1. Inleiding
+### 1. Introduction
 
-Deze frontend programming eindopdracht is gemaakt naar aanleiding van de Frontend Development opleiding aan NOVI Hogeschool.
+This frontend programming final assignment was created as a result of the Frontend Development course at NOVI University of Applied Sciences.
 
-Het project is opgezet met [Create React App](https://github.com/facebook/create-react-app).
+The project was set up with [Create React App](https://github.com/facebook/create-react-app).
 
 ![screen.png](src/assets/screen.png)
 
-### 2. Probleem
+### 2. Problem and solution
 
-De zomer komt eraan en we willen allemaal een mooi, gezond lichaam op het strand, maar hoe doen we dit? Naast je in het zweet werken in de sportschool is goede voeding belangrijk. De juiste hoeveelheid calorieën elke dag innemen zorgt voor vermindering van vet en een goede conditie van het lichaam.
+Summer is coming and we all want a beautiful, healthy body on the beach, but how do we do this? Besides working up a sweat at the gym, good nutrition is important. Taking in the right amount of calories each day will reduce fat and keep your body in good shape.
 
-Deze app zorgt, nadat je de calorieën hebt ingevuld, met één druk op de knop voor drie maaltijden met de juiste hoeveelheid calorieën. Hoe je de maaltijden moet maken staat op een externe website waar naartoe is gelinkt.
+This app, after you enter the calories, provides three meals with the right amount of calories at the push of a button. How to make the meals, is on an external website linked to.
 
 ### 3. API keys
 
-De API keys gebruikt voor dit project komen van [Spoonacular](https://spoonacular.com/food-api/) en
-[Firebase](https://firebase.google.com/firebase). Deze zullen in een apart bestand meegestuurd worden genaamd `.env`. Registreren kun je doen op de `register` pagina wanneer je de applicatie hebt gestart.
+The API keys used for this project come from [Spoonacular](https://spoonacular.com/food-api/) and
+[Firebase](https://firebase.google.com/firebase). These will be sent along in a separate file called `.env`. Registering can be done on the `register` page when you have started the application.
+### 4. Starting the application
 
-### 4. De applicatie starten
-Als je het project gekopieerd hebt naar jouw lokale machine, installeer je eerst de `node_modules` door de volgende commando's in de terminal te runnen:
+Once you have copied the project to your local machine, first install the `node_modules` by running the following commands in the terminal:
 
 - `npm install`
 - `npm install axios`
 - `npm install react-router-dom`
 - `npm install firebase`
 
-Wanneer dit klaar is, kun je de API keys van het `.env` bestand opslaan in de root van het project. In de terminal run je het volgende:
-
+When this is done, you can save the API keys from the `.env` file to the root of the project. In the terminal run the following:
 - `npm run build`
 
-De applicatie starten doe je met behulp van:
+You start the application by using:
 
 - `npm start`
 
-Open http://localhost:3000 om de pagina in de browser te bekijken.
+Open http://localhost:3000 to view the page in the browser.
 
 ### 5. Unit test
 
-Een unit test is in de map `src/__test__` te vinden en de runnen met:
+A unit test can be found in the directory `src/__test__` and run with:
 
 `npm run test`
